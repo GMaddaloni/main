@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Podium CSS</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container podium">
+  <div class="podium__item">
+    <h1 class="podium__city">🥈</h1>
+    <div class="podium__rank second">
+        <img src="https://images.pokemontcg.io/sm115/9.png" alt="">
+    </div>
+    
+  </div>
+  <div class="podium__item">
+    <h1 class="podium__city">🥇</h1>
+    <div class="podium__rank first">
+        <img src="https://images.pokemontcg.io/sm115/9.png" alt="">
+    </svg>
+    </div>
+</div>
+  <div class="podium__item">
+    <h1 class="podium__city">🥉</h1>
+    <div class="podium__rank third">
+        <img src="https://images.pokemontcg.io/sm115/9.png" alt="">
+    </div>
+  </div>
+</>
+<!-- partial -->
+  
+</body>
+<style>
+
+@import url("https://rsms.me/inter/inter.css");
+
+img{
+    max-height:110%; max-width:90%;
+}
+  body {
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  align-items: flex-end;
+}
+
+.podium__item {
+  width: 200px;
+}
+
+.podium__rank {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  color: #fff;
+}
+
+.podium__city {
+  text-align: center;
+  padding: 0 .5rem;
+}
+
+.podium__number {
+  width: 27px;
+  height: 75px;
+}
+
+.podium .first {
+  min-height: 190px;
+  background: rgb(255,172,37);
+background: 
+  linear-gradient(333deg, 
+  rgba(255,172,37,1) 0%, 
+  rgba(254,207,51,1) 13%, 
+  rgba(254,224,51,1) 53%, 
+  rgba(255,172,37,1) 100%);
+}
+
+.podium .second {
+  min-height: 180px;
+  background: rgba(0, 0, 0, 0.303);
+}
+
+.podium .third {
+  min-height: 170px;
+  background: rgb(116, 54, 0);
+}
+
+.podium .four {
+  min-height: 20px;
+  background: green;
+}
+</style>
+</html>
