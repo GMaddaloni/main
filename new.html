@@ -141,7 +141,7 @@ body {
 
         n = 0;
 
-        value = rx['data'][n]['cardmarket']['prices']['averageSellPrice'];
+        value = rx['data'][n]['cardmarket']['prices']['trendPrice'];
         img = rx['data'][n]['images']['small'];
         name = rx['data'][n]['name'];
 
@@ -233,7 +233,7 @@ body {
 
                     console.log('try2')
                     
-                    value = rx['data'][a]['cardmarket']['prices']['averageSellPrice'];
+                    value = rx['data'][a]['cardmarket']['prices']['trendPrice'];
                     img = rx['data'][a]['images']['small'];
 
                     const primo = document.getElementById("primo");
