@@ -251,6 +251,9 @@ body{
 
 <script>
 
+  let arr =[];
+  let arx = [];
+
   let y = '0';
   let z = '0';
   window.onmessage = function(e) {
@@ -322,6 +325,7 @@ body{
               
       var element = iframeDoc.getElementById('primo');
       var value = iframeDoc.getElementById('value');
+      var imag = iframeDoc.getElementById('img').src;
 
       if (element.innerHTML != 'Error!'){
 
@@ -340,7 +344,16 @@ body{
       document.getElementById('2').value = ''
       document.getElementById('3').value = ''
 
-      x.src = ""
+      x.src = "";
+
+      arr.push(jo);
+      arx.push(imag);
+      man = arr.sort();
+      alert(man);
+      alert(arr);
+
+      
+
 
     }
     
