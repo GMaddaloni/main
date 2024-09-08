@@ -152,7 +152,7 @@ body {
         const valuge = document.getElementById("value")
         const imag = document.getElementById("img")
 
-        valuge.innerHTML = value;
+        valuge.innerHTML = value + '$';
         imag.src = img;
 
         console.log(imag.src)
@@ -245,7 +245,7 @@ body {
                     const valuge = document.getElementById("value")
                     const imag = document.getElementById("img")
 
-                    valuge.innerHTML = value;
+                    valuge.innerHTML = value + '$';
                     imag.src = img;
 
                     window.top.postMessage(value, '*')
