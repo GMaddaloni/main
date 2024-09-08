@@ -55,7 +55,7 @@
     <h2 id="prezzo"></h2>
     
     <div class="iframe-container">
-      <iframe width="130%" height="300px" id="joegd" src="/podium.html" class="responsive-iframe" frameborder="0"></iframe>
+      <iframe id="podio" width="130%" height="300px" id="joegd" src="/podium.html" class="responsive-iframe" frameborder="0"></iframe>
     </div>
     
     
@@ -253,6 +253,7 @@ body{
 
   let arr =[];
   let arx = [];
+  let amc = {};
 
   let y = '0';
   let z = '0';
@@ -346,11 +347,20 @@ body{
 
       x.src = "";
 
+      amc[jo]=imag
+
       arr.push(jo);
       arx.push(imag);
-      man = arr.sort();
-      alert(man);
-      alert(arr);
+      amounts = arr;
+      amounts.sort((alt, bet) => {
+      // Remove the dollar signs and convert to numbers
+      let numA = parseFloat(alt.replace('$', ''));
+      let numB = parseFloat(bet.replace('$', ''));
+      
+      return numA - numB;
+    });
+
+      document.getElementById('podio').src = '/podium.html?'+'url1='+amc[amounts[amounts.length - 1]]+'&url2='+amc[amounts[amounts.length - 2]]+'&url3='+amc[amounts[amounts.length - 3]]
 
       
 
